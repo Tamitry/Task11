@@ -1,2 +1,0 @@
-# Atlantida
-My first mode.
