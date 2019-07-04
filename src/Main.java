@@ -1,26 +1,24 @@
 public class Main {
 
     public static void main(String[] args) {
-
     }
-    void Task11(int a, int b, int c) {
+    static void Task11(int a, int b, int c) {
         if ((a == b) && (c == b)) System.out.println("Равны.");
         else System.out.println("Неравны.");
     }
-    void Task12(double m) {
+    static void Task12(double m) {
         System.out.println(m*1000);
-        System.out.println(m*10e6);
+        System.out.println(m*1e6);
         System.out.println(m/1000);
     }
-    void Task13(double r1, double r2) {
+    static void Task13(double r1, double r2) {
         if(r1<=r2){
             System.out.println("Радиус внешнего кольца меньше внутреннего.");
             return;
         }
-        System.out.println((Math.PI*r1*r1/2)-(Math.PI*r2*r2/2));
+        System.out.println((Math.PI*r1*r1)-(Math.PI*r2*r2));
     }
-    void Task14(int a)
-    {
+    static void Task14(int a) {
         int []b = new int[4];
         for(int i=0;i<4;i++){
             b[i] = a%10;
@@ -31,10 +29,11 @@ public class Main {
                 System.out.println("Неверно.");
                 return;
             }
-            System.out.println("Верно.");
+
         }
+        System.out.println("Верно.");
     }
-    void Task151(int n){
+    static void Task151(int n){
         int temp = n;
         int i = 0;
         double sum = 0;
@@ -52,11 +51,10 @@ public class Main {
         }
         System.out.println(sum/i);
     }
-    void Task152(int n)
-    {
+    static void Task152(int n) {
         int temp = n;
         int i = 0;
-        double mul = 0;
+        double mul = 1.;
         while (temp!=0){
             temp/=10;
             i++;
@@ -71,7 +69,7 @@ public class Main {
         }
         System.out.println(Math.pow(mul, 1.0/i));
     }
-    void Task16(int n){
+    static void Task16(int n){
         int temp = n;
         int i = 0;
         int v = 0;
@@ -90,10 +88,12 @@ public class Main {
         }
         System.out.println(v);
     }
-    void Task17(int a, int b){ //Swapper
+    static void Task17(int a, int b){ //Swapper
+        System.out.println("Было: a = "+a+",b = "+b);
         a=a+b;
         b=a-b;
         a=a-b;
+        System.out.println("Стало: a ="+a+",b = "+b);
     }
 
 }
